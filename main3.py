@@ -27,8 +27,6 @@ while True:
             #4 NOTAS
             for i in range(4):
                 notas.append(float(input(f"Digite a {i + 1} nota do aluno ")))
-                
-
 
             #calculo média
             media = (notas[0]+notas[1]+notas[2]+notas[3])/4 #media final do aluno já está aqui
@@ -55,3 +53,5 @@ while True:
        
        for aluno in alunos:
            print(f"Nome {aluno[0]}\n Faltas: {aluno[1]} \n Notas: {', '.join(map(str, aluno[2]))} \n Media: {aluno[3]} \n Situação: {aluno[4]}")
+    elif escolha == 3:
+        break
